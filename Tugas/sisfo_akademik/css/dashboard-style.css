@@ -1,0 +1,67 @@
+/* dashboard-style.css */
+
+/* Gaya khusus untuk halaman dashboard */
+
+.box {
+    position: relative; /* Menjadikan posisi relative untuk membuat koordinat ikon terkait dengan kotak */
+    width: 21.9%; /* Menentukan lebar kotak sebagai 25% dari lebar konten */
+    height: 70px; /* Menentukan tinggi kotak */
+    background-color: #ffffff; /* Warna putih */
+    margin: 10px; /* Jarak antar kotak */
+    float: left; /* Mengatur agar kotak-kotak berderet ke samping */
+    text-align: left; /* Pusatkan teks di dalam kotak */
+    padding-top: 20px; /* Beri ruang atas untuk teks */
+    padding-left: 20px; /* Beri ruang kiri untuk teks */
+    border-radius: 10px; /* Menentukan tingkat kebulatan pinggiran */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan sedikit shadow */
+}
+
+.box i {
+    position: absolute;
+    right: 20px; /* Jarak dari pinggir kanan */
+    top: 50%; /* Pusatkan secara vertikal */
+    transform: translateY(-50%); /* Koreksi posisi vertical */
+    font-size: 40px; /* Sesuaikan ukuran ikon */
+    color: #f0f0f0; /* Warna ikon */
+}
+
+.red-border {
+    font-weight: bold; /* Teks lebih tebal */
+    border-left: 5px solid #ff0000; /* Warna merah */
+    color: #ff0000; /* Warna teks sama dengan warna pinggir kotak */
+}
+
+.green-border {
+    font-weight: bold; /* Teks lebih tebal */
+    border-left: 5px solid #00ff00; /* Warna hijau */
+    color: #00ff00; /* Warna teks sama dengan warna pinggir kotak */
+}
+
+.blue-border {
+    font-weight: bold; /* Teks lebih tebal */
+    border-left: 5px solid #0000ff; /* Warna biru */
+    color: #0000ff; /* Warna teks sama dengan warna pinggir kotak */
+}
+
+.yellow-border {
+    font-weight: bold; /* Teks lebih tebal */
+    border-left: 5px solid #ffff00; /* Warna kuning */
+    color: #ffff00; /* Warna teks sama dengan warna pinggir kotak */
+}
+
+.box p {
+    margin: 0; /* Hilangkan margin bawaan untuk membuat tampilan lebih bersih */
+}
+
+/* Membersihkan elemen setelah kotak-kotak */
+.content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.count {
+    color: black; /* Warna teks angka menjadi hitam */
+    font-size: 24px; /* Sesuaikan dengan ukuran font yang diinginkan */
+    font-weight: bold; /* Teks lebih tebal */
+}
